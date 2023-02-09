@@ -1,0 +1,8 @@
+<div class="tabs">
+  <a
+    *ngFor="let enrollmentType of enrollmentTypes"
+    class="tab tab-lifted"
+    (click)="select(enrollmentType)"
+    [ngClass]="{ 'tab-active': selectTab === enrollmentType.value }">
+    {{ enrollmentType.value }}</a>
+</div>
